@@ -1,0 +1,125 @@
+get init <myproject>....setting of git project str...creates a directory and controls the files
+
+
+cd <my project>
+git add..actually uses the files and put them into work organism sources
+git commit -m "import all the code"
+
+---doug
+git checkout master
+git commit - -m "My new logo"
+git push
+
+----danas
+git checkout -b dansfeature
+git commit -a -m "my feature code"
+push origin danasfeature
+
+
+---doug$
+pull
+git merge danasfeature
+
+-----$
+git add -p Myreport.markdown
+git commit -m"Added latest statistics"
+
+
+git log --graph --decorate --abrev-commit --all --pretty=online....who committed ,modified date etc
+
+
+1.installing git 
+	http://git-scm.com/downloads
+	and choose yr OS
+2.configure your username and email
+	git config --global user.name "govindtbits"
+	git config --global user.email "govind.k@tbitsglobal.com"
+3.to check git settings
+	git config --list
+		user.name=govindtbits
+		user.email=govind.k@tbitsglobal.com
+		color.ui=true
+		merge.tool=meld
+		core.repositoryformatversion=0
+		core.filemode=true
+		core.bare=false
+		core.logallrefupdates=true
+		remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+		remote.origin.url=https://github.com/govindtbits/testrepo.git
+		branch.master.remote=origin
+		branch.master.merge=refs/heads/master
+4.to check specific key's values
+	git config <key>
+5.to take help from git
+	git help <verb>
+	git <verb> --help
+	man git-<verb>
+6.Initializing a Repository in an Existing Directory
+	git init
+7. clone a repository 
+	git clone <url>
+8.clone the repository into a directory named something other than 
+	git clone git://github.com/schacon/abc.git xyz
+9.Checking the Status of Your Files
+	git status
+10.Tracking New Files
+	git add .
+11.Ignoring Files
+	cat .gitignore
+	*.[oa]
+	*~
+
+	syntax:
+		# a comment - this is ignored
+		*.a       # no .a files
+		!lib.a    # but do track lib.a, even though you're 				ignoring .a files above
+		/TODO     # only ignore the root TODO file, not 			subdir/TODO
+		build/    # ignore all files in the build/directory
+		doc/*.txt # ignore doc/notes.txt, but not doc/	server/arch.txt
+12.Viewing Your Staged and Unstaged Changes
+	git diff
+13.Committing Your Changes
+	git commit
+	git commit -m"message"
+14.Skipping the Staging Area
+	git commit -a
+15.Removing Files
+	git rm
+	or delete file and commit
+git remote add a url1
+
+git commit -m"msg"
+git push a master
+username and pwd needed to authenticate
+git config --global color.ui true
+
+sudo apt-get install meld
+git config --global merge.tool meld
+git mergetool
+
+
+sudo apt-get install gitk
+gitk
+
+
+
+ssh keygen
+
+
+
+
+govindtbits---username
+
+
+Git has three main states that your files can reside in: committed, modified, and staged. Committed means that the data is safely stored in your local database. Modified means that you have changed the file but have not committed it to your database yet. Staged means that you have marked a modified file in its current version to go into your next commit snapshot.
+
+Another useful option you may want to configure is the default diff tool to use to resolve merge conflicts. Say you want to use vimdiff:
+$ git config --global merge.tool vimdiff
+
+Tracked files are files that were in the last snapshot; they can be unmodified, modified, or staged. Untracked files are everything else — any files in your working directory that were not in your last snapshot and are not in your staging area. 
+
+
+
+
+2
+
